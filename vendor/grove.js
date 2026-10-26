@@ -726,6 +726,16 @@
     var dpr = Math.min(window.devicePixelRatio || 1, maxDpr);
     var W = Math.max(2, Math.floor(w * dpr));
     var H = Math.max(2, Math.floor(h * dpr));
+    // Software GL readback stalls the sentinel when the buffer is desktop-sized.
+    // Phone frames stay 1:1; only oversized software buffers are scaled down.
+    if (soft && (W > 640 || H > 960)) {
+      var cap = 110000;
+      if (W * H > cap) {
+        var fit = Math.sqrt(cap / (W * H));
+        W = Math.max(2, Math.floor(W * fit));
+        H = Math.max(2, Math.floor(H * fit));
+      }
+    }
     if (canvas.width !== W) canvas.width = W;
     if (canvas.height !== H) canvas.height = H;
     bufW = W; bufH = H; cssW = w; cssH = h;
