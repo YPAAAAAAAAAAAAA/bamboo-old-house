@@ -1,0 +1,89 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #c47a48;
+  overscroll-behavior: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+body { position: relative; }
+#stage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  outline: none;
+}
+#panel {
+  display: none;
+  position: fixed;
+  top: 52px;
+  right: 8px;
+  z-index: 4;
+  width: 232px;
+  max-height: 38vh;
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 10px 10px 12px;
+  border-radius: 14px;
+  background: rgba(255, 246, 232, 0.94);
+  color: #2a2118;
+  font: 13px/1.35 system-ui, -apple-system, "Segoe UI", sans-serif;
+  box-shadow: 0 8px 28px rgba(40, 20, 8, 0.28);
+}
+html.gb-ui-open #panel { display: block; }
+#panel p { margin: 0 0 6px; }
+#panel .name {
+  font: 600 15px/1.2 Georgia, "Palatino Linotype", Palatino, serif;
+}
+#panel .zh { margin-top: -4px; opacity: 0.75; font-size: 12px; }
+#panel .hint { opacity: 0.78; font-size: 12px; }
+#panel .credit {
+  font-size: 10px;
+  line-height: 1.35;
+  opacity: 0.72;
+  margin-bottom: 8px;
+}
+#panel .lbl {
+  margin: 6px 0 4px;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.55;
+}
+#panel .row { display: flex; gap: 6px; margin-bottom: 2px; }
+#panel button {
+  flex: 1 1 0;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 2px;
+  border: 0;
+  border-radius: 10px;
+  background: rgba(42, 33, 24, 0.08);
+  color: #2a2118;
+  font: 13px/1 system-ui, -apple-system, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+#panel button.on { background: #8d3a2a; color: #fff8f0; }
+#grove-toggle {
+  position: fixed;
+  top: 6px;
+  right: 6px;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  font: 20px/40px system-ui, sans-serif;
+  text-align: center;
+  opacity: 0.75;
+  z-index: 6;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
