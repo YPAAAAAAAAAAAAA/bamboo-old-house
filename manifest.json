@@ -1,0 +1,17 @@
+{
+  "id": "bamboo-old-house",
+  "title": { "en": "Bamboo Old House", "zh": "竹海老屋" },
+  "intro": {
+    "en": "A remembered timber house in a bamboo grove, with a stone lane, a pond and a small boat. Drag to look around, pinch to step closer, and change the light and the weather. Wind, rain, birds and insects join on the first touch.",
+    "zh": "竹海中一座被记住的木屋：石径、水塘和一叶小舟。拖动可以环顾，双指可以走近，也可以切换光线和天气。第一次触摸时，风声、雨声、鸟鸣和虫声会轻轻响起。"
+  },
+  "officialFiles": [
+    "vendor/index.html",
+    "vendor/grove.css",
+    "vendor/grove.js",
+    "vendor/LICENSE.txt"
+  ],
+  "playHtml": "play.html",
+  "aspect": "phone",
+  "githubRepo": "ypaaaaaaaaaaaaa/bamboo-old-house"
+}
