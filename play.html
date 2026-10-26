@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="gb-retract" content="#panel">
+<title>Bamboo Old House</title>
+<base href="vendor/">
+<link rel="stylesheet" href="grove.css">
+<script src="/sandbox/_ready.js"></script>
+</head>
+<body>
+<canvas id="stage" width="390" height="844"></canvas>
+<div id="panel">
+  <p class="name">Bamboo Old House</p>
+  <p class="zh">竹海老屋</p>
+  <p class="credit">idea after @yuukilike (yuukilike/bamboo-old-house); clean-room implementation, no code copied</p>
+  <p class="hint">Drag to look. Pinch to step closer.</p>
+  <p class="hint">拖动环顾，双指走近。</p>
+  <p class="hint" id="line">The lane home, between the culms.</p>
+  <p class="lbl">Light</p>
+  <div class="row">
+    <button type="button" data-k="time" data-v="0">Dawn</button>
+    <button type="button" data-k="time" data-v="1">Day</button>
+    <button type="button" data-k="time" data-v="2">Dusk</button>
+    <button type="button" data-k="time" data-v="3">Moon</button>
+  </div>
+  <p class="lbl">Weather</p>
+  <div class="row">
+    <button type="button" data-k="weather" data-v="0">Clear</button>
+    <button type="button" data-k="weather" data-v="1">Mist</button>
+    <button type="button" data-k="weather" data-v="2">Rain</button>
+    <button type="button" data-k="weather" data-v="3">Wind</button>
+  </div>
+  <p class="lbl">Place</p>
+  <div class="row">
+    <button type="button" data-k="place" data-v="lane">Lane</button>
+    <button type="button" data-k="place" data-v="porch">Porch</button>
+    <button type="button" data-k="place" data-v="sky">Sky</button>
+  </div>
+</div>
+<!-- LICENSE.txt -->
+<script src="grove.js"></script>
+</body>
+</html>
